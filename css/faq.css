@@ -1,0 +1,344 @@
+/* FAQ Section Specific Styles */
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-title {
+    color: #0057D8;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-banner {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-banner-img {
+    width: 100%;
+    display: block;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #E1E8F0;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    color: #4A5568;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.faq-icon {
+    color: #A0AEC0;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item:first-child .faq-icon {
+    transform: rotate(180deg);
+    color: #0057D8;
+}
+
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    padding: 0 15px 0 0;
+    opacity: 0;
+}
+
+.faq-answer.active {
+    height: auto;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.faq-answer p {
+    color: #718096;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.faq-load-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#load-more-btn {
+    background: none;
+    border: none;
+    color: #4A5568;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#load-more-btn:hover {
+    color: #0057D8;
+    text-decoration: underline;
+}
+
+/* Demo CTA Section */
+.demo-cta {
+    background-color: #F7FAFC;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.demo-cta h2 {
+    color: #2D3748;
+    margin-bottom: 15px;
+}
+
+.demo-cta p {
+    color: #718096;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-btn {
+    display: inline-block;
+    background-color: #0057D8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.demo-btn:hover {
+    background-color: #004bb7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .demo-cta {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 40px 0;
+    }
+    
+    .faq-title {
+        font-size: 2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Demo Section Styles */
+.demo-section {
+    background-color: #193158;
+    padding: 60px 20px;
+    color: white;
+}
+
+.demo-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demo-title {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.demo-subtitle {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #FFB800;
+    font-weight: 500;
+}
+
+.demo-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #FFB800;
+}
+
+.form-textarea {
+    height: 120px;
+    resize: none;
+    font-family: inherit;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    background-color: transparent;
+}
+
+.checkbox-group input[type="checkbox"]:checked::before {
+    content: "✓";
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.checkbox-group label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.terms-link {
+    color: #FFB800;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.button-row {
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #193158;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.arrow-icon {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .demo-title {
+        font-size: 1.8rem;
+    }
+    
+    .demo-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Add this to your existing CSS */
+/* Update the existing .form-input rule to make the border more visible */
+.form-input {
+    background-color: #193158 !important; /* Keep the background fix */
+    border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Increase opacity for visibility */
+    border-radius: 25px; /* Ensure rounded corners */
+}
+
+/* Ensure tel inputs have the same border style */
+.form-input[type="tel"] {
+    background-color: #193158 !important; /* Matches the section background */
+    border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Match the visible border */
+    border-radius: 25px; /* Ensure rounded corners */
+}
